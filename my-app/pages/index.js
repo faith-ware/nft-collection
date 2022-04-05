@@ -50,10 +50,12 @@ export default function Home() {
 
   // Function for owner to withdraw Ether
   const ownerWithdraw = async () => {
+    alert("Clicked")
     if (isOwner) {
       const signer = await getProviderOrSigner(true);
       const nftContract = new Contract(NFT_CONTRACT_ADDRESS, abi, signer);
       const wt = await nftContract.withdraw();
+      await wt.wait();
       window.alert("You just withdrew your funds!");
     }
   }
