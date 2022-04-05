@@ -380,7 +380,7 @@ export default function Home() {
           {renderButton()} 
           {owner ? <button onClick={ownerWithdraw} className={styles.button}>
           Withdraw
-        </button> : null}
+        </button> : ""}
         </div>
         <div>
           <img className={styles.image} src="./cryptodevs/0.svg" />
