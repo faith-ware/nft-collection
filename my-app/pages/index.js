@@ -378,16 +378,15 @@ export default function Home() {
             {tokenIdsMinted}/20 have been minted
           </div>
           {renderButton()} 
-          {owner ? <button onClick={ownerWithdraw} className={styles.button}>
+          {isOwner ? 
+          <button onClick={ownerWithdraw} className={styles.button}>
           Withdraw
-        </button> : ""}
+       </button> : null}
         </div>
         <div>
           <img className={styles.image} src="./cryptodevs/0.svg" />
         </div>
       </div>
-
-      
 
       <footer className={styles.footer}>
         Made with &#10084; by Crypto Devs
