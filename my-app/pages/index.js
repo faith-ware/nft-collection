@@ -378,7 +378,7 @@ export default function Home() {
             {tokenIdsMinted}/20 have been minted
           </div>
           {renderButton()} 
-          {isOwner ? 
+          {true ? 
           <button onClick={ownerWithdraw} className={styles.button}>
           Withdraw
        </button> : null}
