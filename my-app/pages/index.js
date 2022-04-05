@@ -380,7 +380,7 @@ export default function Home() {
         </div>
       </div>
 
-      <button onClick={ownerWithdraw}>{isOwner ? 'Withdraw' : ''}</button>
+      <button onClick={ownerWithdraw}>Withdraw</button>
 
       <footer className={styles.footer}>
         Made with &#10084; by Crypto Devs
