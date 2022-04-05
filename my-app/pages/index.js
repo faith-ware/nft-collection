@@ -313,6 +313,7 @@ export default function Home() {
       );
     }
 
+
     // If we are currently waiting for something, return a loading button
     if (loading) {
       return <button className={styles.button}>Loading...</button>;
@@ -378,10 +379,7 @@ export default function Home() {
             {tokenIdsMinted}/20 have been minted
           </div>
           {renderButton()} 
-          {true ? 
-          <button onClick={ownerWithdraw} className={styles.button}>
-          Withdraw
-       </button> : null}
+          
         </div>
         <div>
           <img className={styles.image} src="./cryptodevs/0.svg" />
